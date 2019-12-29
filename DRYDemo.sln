@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormUI", "WinFormUI\WinF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFUI", "WPFUI\WPFUI.csproj", "{8752BDA4-307A-4E8C-886D-AF3276354EDD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DRYDemoLibrary", "DRYDemoLibrary\DRYDemoLibrary.csproj", "{3AB05DB4-6F8F-4793-A49F-752558188A1A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{8752BDA4-307A-4E8C-886D-AF3276354EDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8752BDA4-307A-4E8C-886D-AF3276354EDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8752BDA4-307A-4E8C-886D-AF3276354EDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AB05DB4-6F8F-4793-A49F-752558188A1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AB05DB4-6F8F-4793-A49F-752558188A1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AB05DB4-6F8F-4793-A49F-752558188A1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AB05DB4-6F8F-4793-A49F-752558188A1A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DRYDemoLibrary;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,13 +20,8 @@ namespace WinFormUI
 
     private void generateButton_Click(object sender, EventArgs e)
     {
-      employeeIdTextBox.Text = GenerateEmployeeID(firstNameTextBox.Text, lastNameTextBox.Text );
-    }
-
-    private string GenerateEmployeeID(string firstName, string lastName )
-    {
-      string employeeId = $@"{firstName.Substring(0, 4)}{lastName.Substring(0, 4)}{DateTime.Now.Millisecond}";
-      return employeeId;
+      EmployeeProcessor processor = new EmployeeProcessor();
+      employeeIdTextBox.Text = processor.GenerateEmployeeID(firstNameTextBox.Text, lastNameTextBox.Text );
     }
   }
 }
