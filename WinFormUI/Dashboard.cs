@@ -19,8 +19,13 @@ namespace WinFormUI
 
     private void generateButton_Click(object sender, EventArgs e)
     {
-      string employeeId = $@"{firstNameTextBox.Text.Substring(0, 4)}{lastNameTextBox.Text.Substring(0, 4)}{DateTime.Now.Millisecond}";
-      employeeIdTextBox.Text = employeeId;
+      employeeIdTextBox.Text = GenerateEmployeeID(firstNameTextBox.Text, lastNameTextBox.Text );
+    }
+
+    private string GenerateEmployeeID(string firstName, string lastName )
+    {
+      string employeeId = $@"{firstName.Substring(0, 4)}{lastName.Substring(0, 4)}{DateTime.Now.Millisecond}";
+      return employeeId;
     }
   }
 }

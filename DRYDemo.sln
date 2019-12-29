@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29609.76
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormUI", "WinFormUI\WinFormUI.csproj", "{2F6C0FB8-C43D-4CB7-A548-1D61C15F10D7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFUI", "WPFUI\WPFUI.csproj", "{8752BDA4-307A-4E8C-886D-AF3276354EDD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{2F6C0FB8-C43D-4CB7-A548-1D61C15F10D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F6C0FB8-C43D-4CB7-A548-1D61C15F10D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F6C0FB8-C43D-4CB7-A548-1D61C15F10D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8752BDA4-307A-4E8C-886D-AF3276354EDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8752BDA4-307A-4E8C-886D-AF3276354EDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8752BDA4-307A-4E8C-886D-AF3276354EDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8752BDA4-307A-4E8C-886D-AF3276354EDD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
