@@ -4,9 +4,30 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFUI"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        mc:Ignorable="d" FontSize="20" WindowStartupLocation="CenterScreen"
+        Title="DRY Demo" Height="450" Width="800">
     <Grid>
-        
-    </Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="20"/>
+      <RowDefinition Height="auto"/>
+      <RowDefinition Height="auto"/>
+      <RowDefinition Height="auto"/>
+      <RowDefinition Height="auto"/>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+    <StackPanel Grid.Row="1" Orientation="Horizontal">
+    <TextBlock Text="First Name:" Margin="5"/>
+      <TextBox x:Name="firstNameTextBox" MinWidth="100" Margin="5"/>
+    </StackPanel>
+    <StackPanel Grid.Row="2" Orientation="Horizontal">
+      <TextBlock Text="Last Name:" Margin="5"/>
+      <TextBox x:Name="lastNameTextBox" MinWidth="100" Margin="5"/>
+    </StackPanel>
+    <Button Grid.Row="3" x:Name="createEmployeeIdButton" Content="Generate Employee ID" 
+            Margin="5" Padding="10" Click="createEmployeeIdButton_Click"></Button>
+    <StackPanel Grid.Row="4" Orientation="Horizontal">
+      <TextBlock Text="Employee ID:" Margin="5"/>
+      <TextBlock x:Name="employeeId" Margin="5"/>
+    </StackPanel>
+  </Grid>
 </Window>
